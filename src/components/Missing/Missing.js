@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom"
 //component for missing routes
-/* const Missing = () => {
+const Missing = () => {
     return (
         <article style={{ padding: "100px" }}>
             <h1>Oops!</h1>
@@ -12,6 +12,6 @@ import { Link } from "react-router-dom"
         </article>
     )
 
-} */
+} 
 
 export default Missing

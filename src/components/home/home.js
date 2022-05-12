@@ -67,7 +67,7 @@ const Home = () => {
     setTeamData(TeamData.filter(item => item.name !== Team.name));
   }
 
- /*  return (
+   return (
     <div>
       <div className="header">
         <span className="title">Simple CRUD app</span>
@@ -78,5 +78,5 @@ const Home = () => {
     </div>
   )
 }
- */
+
 export default Home;
