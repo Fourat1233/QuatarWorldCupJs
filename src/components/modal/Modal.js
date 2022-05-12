@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { axiosPrivate } from '../../api/axios';
 
 import './modal.css'
 const Modal = ({show, data, onSubmit, onCancel, editTeam}) => {
@@ -19,8 +20,16 @@ const Modal = ({show, data, onSubmit, onCancel, editTeam}) => {
     setFormData({ ...formData, [name]: (name === 'country' ? value : value )});
   }
 
-  const submitData = event => {
+  const submitData = async (event) => {
     event.preventDefault();
+    try {
+      const responseDelte = await axiosPrivate.delete(`/apiTeam/team/${formData.id}`);
+
+      const responseAdd = await axiosPrivate.post('/apiTeam/addTeam',formData);
+
+  }catch (err){
+    console.log(err);
+  } 
     onSubmit(formData);
     onCancel();
   }

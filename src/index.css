@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 * {
     margin: 0;
     padding: 0;
@@ -112,3 +112,11 @@ button {
 .line {
     display: inline-block;
 }
+
+a {
+    text-decoration: none;
+    }
+    ​
+    a:link, a:visited {
+    color: blue;
+    }
