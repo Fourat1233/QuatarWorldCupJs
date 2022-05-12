@@ -122,7 +122,7 @@ const Home = () => {
 
 
 
-  return (
+   return (
     <div>
       <div className="header">
         <span className="title">Simple CRUD app</span>
