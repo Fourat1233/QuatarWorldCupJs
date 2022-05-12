@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DataItem = ({data, onEdit, onDelete}) => (
+/* const DataItem = ({data, onEdit, onDelete}) => (
   <table>
     <thead>
       <tr>
@@ -23,7 +23,7 @@ const DataItem = ({data, onEdit, onDelete}) => (
       )}
     </tbody>
   </table>        
-);
+); */
 
 
 export default DataItem;
